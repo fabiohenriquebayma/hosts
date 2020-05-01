@@ -13,7 +13,7 @@
 # ===============================================================
 
 127.0.0.1 localhost
-127.0.0.1 localhost.localdomain
+127.0.0.1 localhost locahost.localdomain local
 127.0.0.1 local
 255.255.255.255 broadcasthost
 ::1 localhost
@@ -29,6 +29,12 @@ ff02::3 ip6-allhosts
 
 # Custom host records are listed here.
 
+#151.101.112.249 dl-cdn.alpinelinux.org #to fix an error while downloading some daitan stuff.
+
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
 
 # End of custom host records.
 # Start StevenBlack
